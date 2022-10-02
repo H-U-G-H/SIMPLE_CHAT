@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class SimpleChatClientA
+public class ChatClient
 {
     JTextArea incoming; // онке бшбндю
     JTextField outgoing; // онке ббндю
@@ -14,7 +14,7 @@ public class SimpleChatClientA
 
     public static void main(String[] args) // нямнбмни лернд
     {
-        new SimpleChatClientA().go(); // гюосяй йкхемрю
+        new ChatClient().go(); // гюосяй йкхемрю
     }
 
     public void go()
@@ -55,11 +55,11 @@ public class SimpleChatClientA
             InputStreamReader streamReader = new InputStreamReader(socket.getInputStream()); // онрнй янедхмемхъ
             reader = new BufferedReader(streamReader); // жеомни онрнй
             writer = new PrintWriter(socket.getOutputStream()); // янедхмемхе онрнйнб
-            System.out.println("яЕРЭ ЯНГДЮМЮ"); // бшбнд яннаыемхе на сдювмнл хяунде
+            System.out.println("яерэ янгдюмю..."); // бшбнд яннаыемхе на сдювмнл хяунде
         }
         catch(IOException exception) // напюанрйю хяйкчвемхи ббндю/бшбндю
         {
-            System.out.println("оПНАКЕЛЮ МЮ ЩРЮОЕ ЯЕРЕБНЦН ЯНЕДХМЕМХЪ"); // бшбнд яннаыемхъ на ньхайе
+            System.out.println("опнакелю мю щрюое яеребнцн янедхмемхъ..."); // бшбнд яннаыемхъ на ньхайе
             exception.printStackTrace(); // онкмши осрэ хяйкчвемхъ
         }
     } // OUT OF METHOD
@@ -98,7 +98,7 @@ public class SimpleChatClientA
                 }
             }
             catch(Exception exception) {exception.printStackTrace();} // напюанрйю хяйкчвемхи
-        }
-    }
-}
+        } // OUT OF METHOD
+    } // OUT OF INNER CLASS
+} // OUT OF OUTER CLASS
 

@@ -26,3 +26,6 @@ hs_err_pid*
 /.idea/modules.xml
 /.idea/SIMPLE_CHAT.iml
 /.idea/vcs.xml
+/out/production/SIMPLE_CHAT/.gitignore
+/out/production/SIMPLE_CHAT/README.md
+/out/production/SIMPLE_CHAT/.idea/uiDesigner.xml
